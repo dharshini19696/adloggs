@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Product Roadmap</title>
+  <title>Product Meet</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -108,7 +108,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Product Roadmap Overview</h1>
+    <h1>Product Updates</h1>
     <div class="subtitle">Strategic direction, priorities, and measurable outcomes</div>
 
     <div class="search-box">
@@ -123,47 +123,94 @@
     // 🔧 CUSTOMIZE YOUR ROADMAP DATA HERE
     // ==============================
     const roadmapData = [
+  {
+    quarter: "Completed",
+    theme: "Delivered & Live Initiatives",
+    initiatives: [
       {
-        quarter: "Q1 2026",
-        theme: "Foundation & Stability",
-        initiatives: [
-          {
-            title: "Platform Performance Optimization",
-            owner: "Engineering",
-            status: "In Progress",
-            impact: "Reduce API latency by 30%",
-            metric: "P95 < 200ms",
-          },
-          {
-            title: "User Onboarding Revamp",
-            owner: "Product",
-            status: "Planned",
-            impact: "Increase activation rate",
-            metric: "+15% activation",
-          },
-        ],
+        title: "MagicPin Go-Live (Non-Swiggy Orders)",
+        owner: "Operations / Engineering",
+        status: "Completed",
+        impact: "Successfully launched and stabilized order flow",
+        metric: "465+ orders delivered",
       },
       {
-        quarter: "Q2 2026",
-        theme: "Growth & Expansion",
-        initiatives: [
-          {
-            title: "New Market Launch",
-            owner: "Business",
-            status: "Planned",
-            impact: "Expand to 2 new cities",
-            metric: "10K new users",
-          },
-          {
-            title: "AI Recommendation Engine",
-            owner: "Data Team",
-            status: "Discovery",
-            impact: "Improve engagement",
-            metric: "+20% retention",
-          },
-        ],
+        title: "Pricing Pattern Changes",
+        owner: "Product",
+        status: "Completed",
+        impact: "Improved pricing configuration logic",
+        metric: "Live in production",
       },
-    ];
+    ],
+  },
+  {
+    quarter: "In Progress",
+    theme: "Actively Executing",
+    initiatives: [
+      {
+        title: "Referral Code Implementation",
+        owner: "Engineering",
+        status: "In Progress",
+        impact: "Enable rider acquisition via referrals",
+        metric: "Feature rollout in phases",
+      },
+      {
+        title: "Open Orders Enhancement",
+        owner: "Product / Engineering",
+        status: "In Progress",
+        impact: "Improve order visibility and allocation efficiency",
+        metric: "Reduction in unassigned orders",
+      },
+      {
+        title: "ONDC 3PL Configuration",
+        owner: "Tech Integration Team",
+        status: "In Progress",
+        impact: "Enable ONDC third-party logistics integration",
+        metric: "Configuration & mapping ongoing",
+      },
+    ],
+  },
+  {
+    quarter: "Discussion",
+    theme: "Under Strategic Evaluation",
+    initiatives: [
+      {
+        title: "Customer App",
+        owner: "Product",
+        status: "Discovery",
+        impact: "Direct customer ordering capability",
+        metric: "Requirement discussion phase",
+      },
+      {
+        title: "Open Orders – Advanced Optimization",
+        owner: "Engineering",
+        status: "Discovery",
+        impact: "Improve rider assignment efficiency",
+        metric: "Architecture evaluation",
+      },
+    ],
+  },
+  {
+    quarter: "In Pipeline",
+    theme: "Planned / Pending Execution",
+    initiatives: [
+      {
+        title: "Swiggy Instamart Testing",
+        owner: "Integration Team",
+        status: "Planned",
+        impact: "Enable external marketplace order flow",
+        metric: "Pending sandbox testing",
+      },
+      {
+        title: "Swish FIFO Implementation",
+        owner: "Engineering",
+        status: "Planned",
+        impact: "Improve order processing logic",
+        metric: "Awaiting technical validation",
+      },
+    ],
+  },
+];
 
     const roadmapContainer = document.getElementById("roadmap");
     const searchInput = document.getElementById("search");
